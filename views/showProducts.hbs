@@ -1,0 +1,35 @@
+<table id="myTable" class="table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th class="th-sm">Product name</th>
+    <th class="th-sm">Price</th>
+    <th class="th-sm">Picture</th>
+    <th class="th-sm">Category</th>
+    <th class="th-sm">Description</th>
+    <th class="th-sm">Options</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#products}}
+  <tr>
+    <td>{{_id}}</td>
+    <td>{{name}}</td>
+    <td>{{price}}</td>
+    <td>{{picture}}</td>
+    <td>{{category}}</td>
+    <td>{{description}}</td>
+    <td>
+      <form action="/api/product/{{_id}}" method="GET">
+        <button type="submit" class="btn btn-info">Edit</button>
+      </form>
+    </td>
+    <td>
+      <form action="/api/product/{{_id}}" method="GET">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+    </td>
+  </tr>
+  {{/products}}
+  </tbody>
+  </table>
