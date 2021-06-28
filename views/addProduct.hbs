@@ -1,0 +1,27 @@
+<form action="/api/product" method="POST">
+<div class="form-group">
+    <label for="Nombre">Product name</label>
+    <input type="text" class="form-control" value="" name="name" placeholder="Name">
+</div>
+<div class="form-group">
+    <label style="margin-top: 10px;" for="Price">Price</label>
+    <input type="number" class="form-control" value="" placeholder="Introduce a price" name="price">
+</div>
+<div class="form-group">
+    <label style="margin-top: 10px;" for="category">Category</label>
+    <select class="form-control" id="category" name="category">
+        <option>Computers</option>
+        <option>Phones</option>
+        <option>Accesories</option>
+    </select>
+</div>
+<div class="form-group">
+    <label style="margin-top: 10px;" for="description">Description</label>
+    <input type="text" class="form-control" value="" placeholder="Write a description" name="description">
+</div>        
+<div class="form-group">
+    <label style="margin-top: 10px;" for="picture">Picture</label>
+    <input type="text" class="form-control" value="" placeholder="Write the picture url" name="picture">
+</div>
+<button style="margin-top: 20px;" type="submit" class="btn btn-primary">Save</button>
+</form>
